@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIRadio.ai - powered by RADIOButler</title>
+    <title>Radio Butler - Ihr vollautomatisches KI-Radiosystem</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
@@ -32,6 +32,16 @@
         .glass-card:hover {
             border-color: rgba(168, 85, 247, 0.4);
         }
+        /* Style für einheitliche, weiße Logos im Dark Mode */
+        .logo-monochrome {
+            filter: brightness(0) invert(1);
+            opacity: 0.75;
+            transition: all 0.3s ease;
+        }
+        .logo-monochrome:hover {
+            opacity: 1;
+            filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(168, 85, 247, 0.5));
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-purple-500 selection:text-white">
@@ -41,7 +51,7 @@
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-2 font-bold text-xl tracking-wider">
                 <i data-lucide="radio" class="text-purple-500 w-6 h-6"></i>
-                <span>AIRadio<span class="text-purple-500">.ai</span></span>
+                <span>Radio<span class="text-purple-500">Butler</span></span>
             </div>
             <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
                 <a href="#referenzen" class="hover:text-white transition">Referenzen</a>
@@ -72,7 +82,7 @@
             </h1>
             
             <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-                <strong class="text-gray-200">RADIOButler</strong> übernimmt alles, was ein echter Sender braucht: Musikauswahl, Moderation, Nachrichten, Wetter & Verkehr. Streamt rund um die Uhr – ganz ohne Studio oder Rundfunkerfahrung.
+                <strong class="text-gray-200">Radio Butler</strong> übernimmt alles, was ein echter Sender braucht: Musikauswahl, Moderation, Nachrichten, Wetter & Verkehr. Streamt rund um die Uhr – ganz ohne Studio oder Rundfunkerfahrung.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -87,55 +97,46 @@
     </section>
 
     <!-- References / Logos Section -->
-    <section id="referenzen" class="py-12 border-t border-gray-800/50 bg-gray-950/40">
+    <section id="referenzen" class="py-14 border-t border-gray-800/50 bg-gray-950/40">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-xs uppercase tracking-widest text-purple-400 font-semibold mb-8">
-                Vertraut von führenden Sendersystemen & Verlagen
+            <p class="text-xs uppercase tracking-widest text-purple-400 font-semibold mb-10">
+                Vertraut von führenden Radiosendern & Verlagen
             </p>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center justify-center max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-center max-w-5xl mx-auto">
                 
                 <!-- Radio Vaterland -->
-                <div class="glass-card px-6 py-5 rounded-2xl flex items-center justify-center gap-3 grayscale hover:grayscale-0 transition-all duration-300 group cursor-pointer border border-gray-800 hover:border-purple-500/50">
-                    <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition">
-                        <i data-lucide="radio" class="w-5 h-5"></i>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center justify-center gap-3 border border-gray-800/80 hover:border-purple-500/50 transition">
+                    <div class="h-16 flex items-center justify-center">
+                        <img src="Radio Vaterland.png" alt="Radio Vaterland" class="max-h-12 w-auto object-contain logo-monochrome">
                     </div>
-                    <div class="text-left">
-                        <span class="block font-bold text-white text-base tracking-wide group-hover:text-purple-300 transition">Radio Vaterland</span>
-                        <span class="block text-xs text-gray-500">Liechtenstein</span>
-                    </div>
+                    <span class="text-xs text-gray-400 font-medium tracking-wide">Liechtenstein</span>
                 </div>
 
                 <!-- Radio Schaffhuuse -->
-                <div class="glass-card px-6 py-5 rounded-2xl flex items-center justify-center gap-3 grayscale hover:grayscale-0 transition-all duration-300 group cursor-pointer border border-gray-800 hover:border-purple-500/50">
-                    <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition">
-                        <i data-lucide="waves" class="w-5 h-5"></i>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center justify-center gap-3 border border-gray-800/80 hover:border-purple-500/50 transition">
+                    <div class="h-16 flex items-center justify-center">
+                        <img src="Logo_radio_schaffhuuse_kontur.png" alt="Radio Schaffhuuse" class="max-h-12 w-auto object-contain logo-monochrome">
                     </div>
-                    <div class="text-left">
-                        <span class="block font-bold text-white text-base tracking-wide group-hover:text-purple-300 transition">Radio Schaffhuuse</span>
-                        <span class="block text-xs text-gray-500">Schweiz</span>
-                    </div>
+                    <span class="text-xs text-gray-400 font-medium tracking-wide">Schweiz</span>
                 </div>
 
                 <!-- Radio Helgoland -->
-                <div class="glass-card px-6 py-5 rounded-2xl flex items-center justify-center gap-3 grayscale hover:grayscale-0 transition-all duration-300 group cursor-pointer border border-gray-800 hover:border-purple-500/50">
-                    <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition">
-                        <i data-lucide="tower-control" class="w-5 h-5"></i>
+                <div class="glass-card p-6 rounded-2xl flex flex-col items-center justify-center gap-3 border border-gray-800/80 hover:border-purple-500/50 transition">
+                    <div class="h-16 flex items-center justify-center">
+                        <img src="radiohelgoland.jpeg" alt="Radio Helgoland" class="max-h-12 w-auto object-contain logo-monochrome">
                     </div>
-                    <div class="text-left">
-                        <span class="block font-bold text-white text-base tracking-wide group-hover:text-purple-300 transition">Radio Helgoland</span>
-                        <span class="block text-xs text-gray-500">Deutschland</span>
-                    </div>
+                    <span class="text-xs text-gray-400 font-medium tracking-wide">Deutschland</span>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Deep Feature Section (RADIOButler Engine) -->
+    <!-- Deep Feature Section (Radio Butler Engine) -->
     <section id="features" class="py-24 max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-5xl font-bold mb-4">Was <span class="gradient-text">RADIOButler</span> für dich erledigt</h2>
-            <p class="text-gray-400 text-lg max-w-2xl mx-auto">Du entscheidest, wie dein Sender klingt. RADIOButler hält ihn 24/7 verlässlich on air.</p>
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Was <span class="gradient-text">Radio Butler</span> für dich erledigt</h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">Du entscheidest, wie dein Sender klingt. Radio Butler hält ihn 24/7 verlässlich on air.</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -147,10 +148,10 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Musikprogramm, das passt</h3>
                 <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                    Wähle Genres, Stimmungen, Energie und Zielaltersgruppen. Die MusicBox sorgt dafür, dass Titel nicht zu schnell wiederholt werden.
+                    Wähle Genres, Stimmungen, Energie und Zielaltersgruppen. Die MusicBox sucht rund um die Uhr die passenden Songs aus und sorgt dafür, dass Titel nicht zu schnell wiederholt werden.
                 </p>
                 <div class="bg-purple-950/40 p-3 rounded-lg border border-purple-800/30 text-xs text-purple-300">
-                    <strong>Rechtefrei:</strong> Spielt KI-generierte Musik & eigene Uploads – frei von Labelrechten Dritter.
+                    <strong>Rechtefrei:</strong> Spielt KI-generierte Musik & eigene Uploads – so bleibt dein Programm frei von Labelrechten Dritter.
                 </div>
             </div>
 
@@ -161,7 +162,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Moderation, die live klingt</h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
-                    KI-Moderatoren begrüßen deine Hörer, sprechen über die Musik und deine Themen – in deiner Sprache, mit Stimmen, die du wählst. Natürlich, warm und nie um Worte verlegen.
+                    KI-Moderatoren begrüßen deine Hörer, sprechen über die Musik und deine Themen – in deiner Sprache, mit Stimmen, die du aussuchst. Natürlich, warm und nie um Worte verlegen.
                 </p>
             </div>
 
@@ -172,7 +173,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Nachrichten, Wetter & Verkehr</h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
-                    Frische Weltnachrichten aus kuratierten Quellen zur Stunde, dazu lokales Wetter und aktuelle Verkehrslage für deine Region – vollautomatisch geschrieben, gesprochen und gesendet.
+                    Frische Weltnachrichten aus kuratierten Quellen zur Stunde, dazu Wetter und Verkehr für deine Region – vollautomatisch geschrieben, gesprochen und gesendet.
                 </p>
             </div>
 
@@ -183,7 +184,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Jingles & Senderbranding</h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
-                    Sounder, Sweeper und Werbespots mit deinem Sendernamen und Claim – automatisch produziert, damit dein Sender vom ersten Tag an wie eine etablierte Marke klingt.
+                    Sounder, Sweeper und Werbespots mit deinem Sendernamen und Claim – automatisch produziert, damit dein Sender vom ersten Tag an wie eine echte Marke klingt.
                 </p>
             </div>
 
@@ -194,7 +195,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Dein Sender, deine Regeln</h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
-                    Bring eigene Themen und Inhalte ein, sperre unpassende Songs und feile mit dem eingebauten Kompressor am Sound. Alles bleibt jederzeit unter deiner Kontrolle.
+                    Bring eigene Themen, Texte und Inhalte ein, lege Moderationsthemen fest, sperre Songs, feile mit dem eingebauten Kompressor am Sound – alles bleibt jederzeit unter deiner Kontrolle.
                 </p>
             </div>
 
@@ -203,9 +204,9 @@
                 <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 mb-6">
                     <i data-lucide="database" class="w-6 h-6"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Eigene Quellen & RSS</h3>
+                <h3 class="text-xl font-bold mb-3">Eigene Quellen definieren</h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
-                    Binde Webseiten, RSS-Feeds oder Unternehmensdatenbanken direkt an. RADIOButler verwandelt deine News sofort in natürliche Sprachbeiträge.
+                    Verbinden Sie Ihre Webseiten, RSS-Feeds oder internen Datenbanken. Radio Butler zieht automatisch relevante Inhalte und verwandelt sie in flüssige Moderationen.
                 </p>
             </div>
 
@@ -220,18 +221,18 @@
             <div class="grid md:grid-cols-3 gap-8 relative">
                 <div class="p-6">
                     <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">1</div>
-                    <h4 class="font-bold text-lg mb-2">Registrieren & Einrichten</h4>
-                    <p class="text-gray-400 text-sm">Wähle Musik-Style, Branding und Sprache. Was früher ein ganzes Studio brauchte, sind heute wenige Klicks.</p>
+                    <h4 class="font-bold text-lg mb-2">Registrieren & Bestätigen</h4>
+                    <p class="text-gray-400 text-sm">Registrieren, bestätigen, fertig. Was früher ein ganzes Team und Studio brauchte, sind heute nur ein paar Klicks.</p>
                 </div>
                 <div class="p-6">
                     <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">2</div>
-                    <h4 class="font-bold text-lg mb-2">Quellen verbinden</h4>
-                    <p class="text-gray-400 text-sm">Verknüpfe deine Webseite, RSS-Feeds oder firmeninterne Infos für individuelle KI-Moderationen.</p>
+                    <h4 class="font-bold text-lg mb-2">Sound & Inhalte definieren</h4>
+                    <p class="text-gray-400 text-sm">Bestimme Musik-Genres, wähle KI-Stimmen aus und binde deine eigenen Quellen oder Webseiten ein.</p>
                 </div>
                 <div class="p-6">
                     <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">3</div>
                     <h4 class="font-bold text-lg mb-2">24/7 Streamen</h4>
-                    <p class="text-gray-400 text-sm">Dein Sender streamt unter eigener URL – ohne Hardware, ohne Studio und ohne Rundfunkerfahrung.</p>
+                    <p class="text-gray-400 text-sm">Dein Sender streamt unter eigener URL – ohne Studio, ohne Hardware und ohne Rundfunkerfahrung.</p>
                 </div>
             </div>
         </div>
@@ -281,7 +282,7 @@
     <section id="preise" class="py-24 bg-gray-900/40 border-t border-gray-800/50">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-5xl font-bold mb-4">Transparente Preise</h2>
-            <p class="text-gray-400 text-lg mb-12">Alles inklusive – RADIOButler Engine, Infrastruktur & Support.</p>
+            <p class="text-gray-400 text-lg mb-12">Alles inklusive – Radio Butler Engine, Infrastruktur & Support.</p>
 
             <div class="glass-card p-10 md:p-14 rounded-3xl border-purple-500/30 relative">
                 <div class="absolute -top-4 left-1/2 -translate-x-1/2 gradient-bg text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -297,7 +298,7 @@
 
                 <div class="grid md:grid-cols-2 gap-4 text-left max-w-xl mx-auto mb-10 text-gray-300 text-sm">
                     <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-purple-400 w-5 h-5"></i> In 1 Woche sendebereit</div>
-                    <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-purple-400 w-5 h-5"></i> RADIOButler 24/7 Automation</div>
+                    <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-purple-400 w-5 h-5"></i> Radio Butler 24/7 Automation</div>
                     <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-purple-400 w-5 h-5"></i> KI-Moderation, News & Wetter</div>
                     <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-purple-400 w-5 h-5"></i> Eigene Quellen & Sounder</div>
                 </div>
@@ -341,7 +342,7 @@
 
     <!-- Footer -->
     <footer class="border-t border-gray-800/50 py-8 text-center text-sm text-gray-500">
-        <p>© 2026 AIRadio.ai. Alle Rechte vorbehalten.</p>
+        <p>© 2026 Radio Butler. Alle Rechte vorbehalten.</p>
     </footer>
 
     <!-- Initialize Lucide Icons -->
